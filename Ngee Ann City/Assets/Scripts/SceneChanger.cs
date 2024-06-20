@@ -22,6 +22,18 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("SettingsPage");
     }
 
+    public void ChangeToleaderboardPage()
+    {
+        Debug.Log("Leaderboard Page");
+        SceneManager.LoadScene("leaderboard");
+    }
+
+    public void ChangeToLoadGamePage()
+    {
+        Debug.Log("Load Game Page");
+        SceneManager.LoadScene("LoadGamePage");
+    }
+
     // Arcade Game Menu Scene Changer //
 
     public void ArcadeGame()
@@ -83,6 +95,12 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("FreePlayMenu");
     }
 
+    // Scene Changer to return to main menu in Arcade mode
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu"); // Replace "MainMenu" with the name of your main menu scene
+    }
 
     // Scene Changer to Quit Game //
     public void QuitGame()
